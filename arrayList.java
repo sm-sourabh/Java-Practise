@@ -8,27 +8,27 @@ public class arrayList {
         arr.add("Hello");
         System.out.println(arr);
 
-        ArrayList<Integer> arrInt=new ArrayList<>();
-        arr.add(40);
-        arr.add(40);
-        arr.add(40);
-        System.out.println(arr);
+        ArrayList<String> arr2=new  ArrayList<>();
+        System.out.println(arr2);
+        arr2.addAll(arr);
+        System.out.println(arr2);
+
+        // ArrayList<Integer> arrInt=new ArrayList<>();
+        // arr.add(40);
+        // arr.add(40);
+        // arr.add(40);
+        // System.out.println(arr);
 
         List<Integer> ls=new ArrayList<>();
         ls.add(30);
         ls.add(40);
         ls.add(50);
         //ls.addAll(arr);
-        System.out.println(ls);
+        System.out.println("Before Sorting : " + ls);
+        Collections.sort(ls);
+        System.out.println("After Sorting: " + ls);
 
-        ArrayList<String> arr2=new ArrayList<>();
-        arr2.add("ch");
-        arr2.add("c");
-        arr2.add("c");
-        System.out.println(arr2);
-
-        arr2.addAll(arr);
-        System.out.println(arr2);
+        Array[] newArr=Collections.toArray(arr)
 
     }
 
